@@ -16,7 +16,7 @@
     <% @posts.each do |post| %>
       <tr style = "background-color: beige">
         <td><%= post.title %></td>
-        <td><%= post.user.username %></td>
+        <td><%= link_to post.user.username, user_posts_path(name: post.user.username) %></td>
         <td><%= post.blog_entry %></td>
         <td>
         <div class = "btn-group btn-group-md" role = "group", style="float:right;">
@@ -31,5 +31,5 @@
 </table>
 
 <br>
-
+<%= paginate @posts %>
 <%= link_to 'New Post', new_post_path %>

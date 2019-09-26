@@ -55,4 +55,11 @@ gem 'bootstrap-sass'
 # user management and security
 gem 'devise'
 
+# avatar system that connects signed up users to their gravatar image
 gem 'gravatarify', '~>3.0.0'
+
+# image upload system
+gem 'carrierwave'
+
+#provides functions to handle paging
+gem 'kaminari'
