@@ -14,14 +14,17 @@
 
   <tbody>
     <% @posts.each do |post| %>
-      <tr>
+      <tr style = "background-color: beige">
         <td><%= post.title %></td>
         <td><%= post.user.email %></td>
         <td><%= post.blog_entry %></td>
-        <td><%= link_to 'Show', post, class: "btn btn-success" %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary" %></td>
-        <td><%= link_to 'Destroy', post, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class = "btn-group btn-group-md" role = "group", style="float:right;">
+        <%= link_to 'Show', post, class: "btn btn-success" %>
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary" %>
+        <%= link_to 'Destroy', post, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
