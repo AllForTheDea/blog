@@ -21,9 +21,25 @@
 .jumbotron{
 	margin-top: 0;
 	margin-bottom: 0;
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffff00), color-stop(1, #ff9900));
+	background: -webkit-linear-gradient(bottom left, #ffff00 0%, #ff9900 100%);
+	background: -moz-linear-gradient(bottom left, #ffff00 0%, #ff9900 100%);
+	background: -o-linear-gradient(bottom left, #ffff00 0%, #ff9900 100%);
+	background: -ms-linear-gradient(bottom left, #ffff00 0%, #ff9900 100%);
+	background: linear-gradient(to top right, #ffff00 0%, #ff9900 100%);
 }
 
 .navbar{
 	margin-top: 0;
 	margin-bottom: 0;
+	background-color: black;
 }
+
+body{
+background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #504b3f), color-stop(1, #ffffff));
+background: -webkit-linear-gradient(bottom, #504b3f 0%, #ffffff 100%);
+background: -moz-linear-gradient(bottom, #504b3f 0%, #ffffff 100%);
+background: -o-linear-gradient(bottom, #504b3f 0%, #ffffff 100%);
+background: -ms-linear-gradient(bottom, #504b3f 0%, #ffffff 100%);
+background: linear-gradient(to top, #504b3f 0%, #ffffff 100%);
+} 
