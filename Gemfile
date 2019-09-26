@@ -54,3 +54,5 @@ gem 'bootstrap-sass'
 
 # user management and security
 gem 'devise'
+
+gem 'gravatarify', '~>3.0.0'

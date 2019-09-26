@@ -7,7 +7,7 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @post.user.email %>
+  <%= @post.user.username %>
 </p>
 
 <p>
@@ -19,7 +19,7 @@
 	<%= render 'comments/form', comment: @comment %>
 	<% @post.comments.each do |comment| %>
 	<div class = "well">
-		<%= comment.user.email %> says... <br/>
+		<%= comment.user.username %> says... <br/>
 		<%= comment.comment_entry %>
 	</div>
 	<% end %>
